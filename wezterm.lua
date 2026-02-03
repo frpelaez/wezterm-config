@@ -43,7 +43,7 @@ config.initial_rows = 30
 
 -- or, changing the font size and color scheme.
 -- config.color_scheme = "tokyonight-storm"
-config.color_scheme = "Tokyo Night Moon"
+config.color_scheme = "tokyonight"
 
 -- Background
 config.scrollback_lines = 3000
