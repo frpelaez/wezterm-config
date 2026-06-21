@@ -127,21 +127,6 @@ wezterm.on("update-right-status", function(window, pane)
 
 	for _, b in ipairs(wezterm.battery_info()) do
 		local charge = b.state_of_charge * 100
-		-- local bat_icon = " 󰁹"
-		-- if b.state == "Charging" then
-		-- 	bat_icon = " C"
-		-- end
-		-- elseif charge >= 100 then
-		-- 	bat_icon = " 󰁹"
-		-- elseif charge >= 80 then
-		-- 	bat_icon = " 󰂀"
-		-- elseif charge >= 50 then
-		-- 	bat_icon = " 󰁾"
-		-- elseif charge >= 20 then
-		-- 	bat_icon = " 󰁻"
-		-- else
-		-- 	bat_icon = " 󰁺"
-		-- end
 		local bat_icon = ""
 		table.insert(cells, { text = string.format("%s %.0f%%", bat_icon, charge), color = "#a6e3a1" })
 	end
@@ -188,7 +173,7 @@ wezterm.on("update-status", function(window, _)
 		{ Foreground = { Color = "#11111b" } },
 		{ Text = text },
 
-		{ Background = { Color = "rgba(0, 0, 0 , 0)" } },
+		{ Background = { Color = "rgba(0, 0, 0, 0)" } },
 		{ Text = " " },
 	}))
 end)
